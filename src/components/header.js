@@ -120,14 +120,25 @@ const HeaderComponent = () => {
         </div>
         <div className="xl:absolute bg-[#FFEAF5] w-full xl:w-[770px] 2xl:w-[920px] xl:h-[620px] right-0 top-0">
           <Image
-            style={{ width: "100%", height: "100%", marginTop: "90px" }}
+            style={{ width: "100%", height: "100%", marginTop: "75px", objectFit: "cover" }}
             src="/banner.svg"
             alt="IPDC Logo"
             priority
-            width={100}
-            height={24}
-            objectFit="cover"
+            width={770}
+            height={620}
+            objectFit="fit-cover"
           />
+          <div className="flex gap-4 shadow p-3 rounded-full py-4 items-center w-fit absolute top-1/4  xl:-left-14 bg-white">
+            <Image src="/car.svg" alt="car" priority width={34} height={28} />
+            <h1 className="text-xl font-medium">Car Loans</h1>
+          </div>
+          <div className="flex gap-4 shadow p-3 rounded-full py-4 items-center w-fit absolute top-1/3 right-1 md:right-24 xl:right-14 bg-white">
+            <Image src="/house.svg" alt="car" priority width={34} height={28} />
+            <h1 className="text-xl font-medium">House Loans</h1>
+          </div>
+          <div className="flex gap-4 p-3 rounded-full py-4 items-center w-fit absolute xl:top-1/2 top-1/3 mt-8 xl:mt-0 right-1 md:right-24 xl:right-14">
+            <Image src="/dot.png" alt="car" priority width={94} height={38} />
+          </div>
         </div>
       </div>
     </div>

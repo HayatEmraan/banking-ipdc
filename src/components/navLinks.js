@@ -7,17 +7,17 @@ const navLinksComponents = ({ navLinks }) => {
   return (
     <>
       {isOpen ? (
-        <AiOutlineMenuFold size={30} onClick={() => setIsOpen(!isOpen)} />
+        <AiOutlineMenuFold className="cursor-pointer" size={30} onClick={() => setIsOpen(!isOpen)} />
       ) : (
         <AiOutlineMenuFold
-          className="rotate-180"
+          className="rotate-180 cursor-pointer"
           size={30}
           onClick={() => setIsOpen(!isOpen)}
         />
       )}
       <div
         className={`${
-          !isOpen ? "flex flex-col" : "hidden"
+          isOpen ? "flex flex-col" : "hidden"
         } absolute min-h-screen left-0 w-full bg-[#D8DCDD] p-2 z-10 space-y-4 mt-12`}
       >
         {navLinks.map((link) => (
