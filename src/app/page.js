@@ -1,9 +1,9 @@
-import Button from "../components/button";
+import CustomerExperience from "../components/customerexperience";
 
 export default function Home() {
   return (
     <main>
-      <Button />
+      <CustomerExperience />
     </main>
   );
 }
